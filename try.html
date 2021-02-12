@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY-QUIZ</title>
+    <link rel="stylesheet" href="/try.css">
+</head>
+<body>
+
+    <h1 style="font-style: italic;">QUIZ</h1>
+    
+    <form name="quiz" class="my">
+
+
+
+
+        1.Prime Minister of India? 
+        <ul class="q1-inputs" style="margin-top: 1pt">
+          <li><input type="radio" name="q1" value="Narendra Modi">Narendra Modi</li>
+          <li><input type="radio" name="q1" value="Ramnath Kovind">Ramnath Kovind</li>
+          <li><input type="radio" name="q1" value="Rajnath Singh">Rajnath Singh</li>
+          <span class="hidden" style="color:red;">Narendra Modi</span>
+          
+           
+        </ul>
+        
+        
+        
+        
+        2. President of India?
+        
+        <ul style="margin-top: 1pt">
+          <li><input type="radio" name="q2" value="Lal krishna advani"> Lal krishna advani</li>
+          <li><input type="radio" name="q2" value="Ramnath Kovind">Ramnath Kovind</li>
+          <li><input type="radio" name="q2" value="Donald TRump">Donald TRump</li>
+          <span class="hidden" style="color:red;">Ramnath Kovind</span>
+        </ul>
+        
+        
+        
+        3. India got Independent in which year?
+        <ul style="margin-top: 1pt">
+          <li><input type="radio" name="q3" value="1967">1967</li>
+          <li><input type="radio" name="q3" value="1947">1947</li>
+          <li><input type="radio" name="q3" value="1978">1978</li>
+        </ul>
+        
+        
+        
+        4.Is India situated in Asia?
+        <ul style="margin-top: 1pt">
+          <li><input type="radio" name="q4" value="false">false</li>
+          <li><input type="radio" name="q4" value="dont know">dont know</li>
+          <li><input type="radio" name="q4" value="True">True</li>
+        </ul>
+        
+        5.Kedarnath is situated in which state?
+        
+        <ul style="margin-top: 1pt">
+          <li><input type="radio" name="q5" value="Bihar"> Bihar</li>
+          <li><input type="radio" name="q5" value="Uttarakhand">Uttarakhand</li>
+          <li><input type="radio" name="q5" value="Maharastra">Maharastra</li>
+        </ul>
+        
+        
+        
+        
+        
+        
+        
+        
+        <input type="button" class="btn1" style="background-color: darkslategray; height: 30px; font-size: 20px;" value="Get score" onClick="getScore(this.form)">
+        <input type="reset"  class="btn2" style="background-color: darkslategray; height: 30px; font-size: 20px;" value="Clear answers">
+        <p class="sc" style="font-size: 20px;"> SCORE = <strong><input class="bgclr" type="text" size="5" name="percentage" disabled></strong><br><br>
+        CORRECT ANSWERS:<br>
+        <textarea class="bgclr" name="solutions" wrap="virtual" rows="10" cols="100" disabled>
+        </textarea>
+        </form>
+
+    <script src="/try.js"></script>
+</body>
+</html>
